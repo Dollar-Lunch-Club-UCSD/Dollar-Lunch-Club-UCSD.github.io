@@ -61,14 +61,23 @@ img {
 }
 
 .logo {
-	width: 5em;
+	max-width: 5em;
+	max-height: 5em;
 }
 
 .grid-container {
 	display: grid;
+}
+
+.grid-container.logo-banner {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr;
   }
+
+.grid-container.our-friends {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;	
+}
 
 @media (orientation: landscape) {
 	body {
@@ -92,5 +101,15 @@ details {
 }
 
 summary {
+	margin-bottom: 1em;
+}
+
+.art {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.calendar {
+	margin-top: 1em;
 	margin-bottom: 1em;
 }
