@@ -63,31 +63,51 @@ img {
 .logo {
 	max-width: 5em;
 	max-height: 5em;
+	margin-bottom: 1em;
 }
 
 .grid-container {
 	display: grid;
 }
 
-.grid-container.logo-banner {
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;
-  }
+.grid-container > .grid-item {
+	justify-content: center;
+	max-width: 10em;
+	font-weight: bold;
+}
 
-.grid-container.our-friends {
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+#logo-banner.grid-container {
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+#other-resources.grid-container {
+	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;	
+}
+
+.grid-container.link-logos > .grid-item {
+	align-self: center;
+	color: #DF5555;
 }
 
 @media (orientation: landscape) {
 	body {
 	  width: 60vw;
 	}
+	#our-friends.grid-container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;	
+	}
   }
 
   @media (orientation: portrait) {
 	body {
 	  width: 90vw;
+	}
+	#our-friends.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;	
 	}
   }
 
