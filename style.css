@@ -111,6 +111,25 @@ img {
 	}
   }
 
+  @media (max-width: 1200px) {
+	.logo {
+		max-width: 25vw;
+		max-height: 25vw;
+	}
+	#logo-banner .grid-item {
+		max-width: 25vw;
+		word-break: break-all;
+	}
+	.art {
+		max-width: 90vw;
+	}
+	.calendar {
+		max-width: 90vw;
+		max-height: 90vh;
+	}
+  }
+
+
 details {
 	background-color: #556B2F;
 	color: #FFFBC8;
