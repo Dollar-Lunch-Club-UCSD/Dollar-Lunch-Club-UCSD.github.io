@@ -43,10 +43,12 @@ body {
 }
 
 h1, h3, h5 {
+	margin: 1em;
 	color: #DF5555;
 }
 
 h2, h4, h6 {
+	margin: 1em;
 	color: #FF9E00;
 }
 
@@ -63,7 +65,8 @@ img {
 .logo {
 	max-width: 5em;
 	max-height: 5em;
-	margin-bottom: 1em;
+	margin: 1em;
+	height: fit-content;
 }
 
 .grid-container {
@@ -71,7 +74,10 @@ img {
 }
 
 .grid-container > .grid-item {
+	place-self: center;
 	justify-content: center;
+	text-align: center;
+	object-fit: scale-down;
 	max-width: 10em;
 	font-weight: bold;
 }
@@ -91,13 +97,28 @@ img {
 	color: #DF5555;
 }
 
+#kumeyaay-tribe-website-logo {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 @media (orientation: landscape) {
 	body {
 	  width: 60vw;
 	}
+
 	#our-friends.grid-container {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr;	
+		grid-template-rows: 1fr 1fr;	
+	}
+
+	#our-values.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	#kumeyaay-tribe-website-logo {
+		width: 20vw;
 	}
   }
 
@@ -107,15 +128,20 @@ img {
 	}
 	#our-friends.grid-container {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;	
-	}
+		grid-template-rows: 1fr 1fr 1fr 1fr;	
+	}	
   }
 
   @media (max-width: 1200px) {
-	.logo {
-		max-width: 25vw;
-		max-height: 25vw;
+	.grid-item {
+		max-width: 20vw;
+		max-height: 20vw;		
 	}
+
+/*	.logo {
+		height: 100%;
+		
+	}*/
 	#logo-banner .grid-item {
 		max-width: 25vw;
 		word-break: break-all;
@@ -127,6 +153,10 @@ img {
 		max-width: 90vw;
 		max-height: 90vh;
 	}
+
+	#kumeyaay-tribe-website-logo {
+		max-width: 40vw;
+	}	
   }
 
 
@@ -146,9 +176,11 @@ summary {
 .art {
 	margin-top: 1em;
 	margin-bottom: 1em;
+	object-fit: scale-down;
 }
 
 .calendar {
 	margin-top: 1em;
 	margin-bottom: 1em;
+	object-fit: scale-down;
 }
