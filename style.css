@@ -62,13 +62,6 @@ img {
 	margin-right: auto;
 }
 
-.logo {
-	max-width: 5em;
-	max-height: 5em;
-	margin: 1em;
-	height: fit-content;
-}
-
 .grid-container {
 	display: grid;
 }
@@ -78,7 +71,7 @@ img {
 	justify-content: center;
 	text-align: center;
 	object-fit: scale-down;
-	max-width: 10em;
+	/*max-width: 10em;*/
 	font-weight: bold;
 }
 
@@ -107,6 +100,13 @@ img {
 	  width: 60vw;
 	}
 
+	.logo {
+		max-width: 10vw;
+		max-height: 10vw;
+		margin: 1vw;
+		height: fit-content;
+	}
+
 	#our-friends.grid-container {
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: 1fr 1fr;	
@@ -117,35 +117,55 @@ img {
 		grid-template-rows: 1fr;
 	}
 
+	#our-values .grid-item {
+		width: 25vw;
+	}
+
 	#kumeyaay-tribe-website-logo {
 		width: 20vw;
 	}
+
+	#our-values.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
   }
 
-  @media (orientation: portrait) {
+  @media (orientation: portrait) or (max-width: 1200px){
 	body {
 	  width: 90vw;
 	}
-	#our-friends.grid-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;	
-	}	
-  }
 
-  @media (max-width: 1200px) {
+	.logo {
+		max-width: 20vw;
+		max-height: 20vw;
+		margin: 1vw;
+		/*height: fit-content;*/
+	}
+
 	.grid-item {
 		max-width: 20vw;
 		max-height: 20vw;		
 	}
 
-/*	.logo {
-		height: 100%;
-		
-	}*/
 	#logo-banner .grid-item {
 		max-width: 25vw;
 		word-break: break-all;
 	}
+
+	#kumeyaay-tribe-website-logo {
+		max-width: 40vw;
+	}	
+
+	#our-values.grid-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	#our-values .grid-item {
+		margin: 1em;
+	}
+
 	.art {
 		max-width: 90vw;
 	}
@@ -154,9 +174,11 @@ img {
 		max-height: 90vh;
 	}
 
-	#kumeyaay-tribe-website-logo {
-		max-width: 40vw;
+	#our-friends.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr;	
 	}	
+
   }
 
 
