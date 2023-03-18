@@ -64,6 +64,8 @@ img {
 
 .grid-container {
 	display: grid;
+	margin: 1em;
+	align-content: space-around;
 }
 
 .grid-container > .grid-item {
@@ -73,6 +75,7 @@ img {
 	object-fit: scale-down;
 	/*max-width: 10em;*/
 	font-weight: bold;
+	margin: 1em;
 }
 
 #logo-banner.grid-container {
@@ -134,18 +137,22 @@ img {
   @media (orientation: portrait) or (max-width: 1200px){
 	body {
 	  width: 90vw;
+	  font-size: 2.5vmax;
 	}
-
-	.logo {
-		max-width: 20vw;
-		max-height: 20vw;
-		margin: 1vw;
-		/*height: fit-content;*/
-	}
-
+	
 	.grid-item {
-		max-width: 20vw;
-		max-height: 20vw;		
+		margin: 1vw;
+		max-width: 25vmax;
+		max-height: 25vmax;		
+	}
+
+	img.logo {
+		padding: 1vw;
+		max-width: 20vmax;
+		max-height: 20vmax;
+		height:inherit;
+		width: inherit;
+		object-fit: contain;
 	}
 
 	#logo-banner .grid-item {
