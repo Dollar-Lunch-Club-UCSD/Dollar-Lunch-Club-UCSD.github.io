@@ -1,0 +1,58 @@
+/* from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp */
+
+nav {
+	background-color: #556B2F;
+	color: #FFFBC8;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-weight: bold;
+  }
+
+nav ul, nav ol{
+    list-style: none;
+}
+
+
+  nav a {
+    display: block;
+    color: #FFFBC8;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  nav a.active {
+    background-color: #DF5555;
+    color: black;
+  }
+  
+  nav a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  main {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    nav a {float: left;}
+    main {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    nav a {
+      text-align: center;
+      float: none;
+    }
+  }

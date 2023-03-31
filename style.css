@@ -53,7 +53,7 @@ h2, h4, h6 {
 }
 
 a {
-	color: #FFFBC8;
+	color: #FF9E00;
 }
 
 img {
@@ -83,11 +83,6 @@ img {
 	grid-template-rows: 1fr;
 }
 
-#other-resources.grid-container {
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;	
-}
-
 .grid-container.link-logos > .grid-item {
 	align-self: center;
 	color: #DF5555;
@@ -100,7 +95,7 @@ img {
 
 @media (orientation: landscape) {
 	body {
-	  width: 60vw;
+	  width: 80vw;
 	}
 
 	.logo {
@@ -131,6 +126,11 @@ img {
 	#our-values.grid-container {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
+	}
+
+	#other-resources.grid-container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;	
 	}
   }
 
@@ -185,6 +185,11 @@ img {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr 1fr 1fr;	
 	}	
+
+	#other-resources.grid-container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;	
+	}
 
   }
 
