@@ -176,7 +176,7 @@ img {
 	.art {
 		max-width: 90vw;
 	}
-	.calendar {
+	#calendar {
 		max-width: 90vw;
 		max-height: 90vh;
 	}
@@ -213,7 +213,7 @@ summary {
 	object-fit: scale-down;
 }
 
-.calendar {
+#calendar {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	object-fit: scale-down;
