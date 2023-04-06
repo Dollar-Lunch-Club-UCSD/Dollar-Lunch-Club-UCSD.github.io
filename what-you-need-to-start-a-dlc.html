@@ -4,8 +4,12 @@
 <head>
 <title>Dollar Lunch Club @ UCSD</title>
 <link rel="icon" type="image/x-icon" href="./favicon.png">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="sidebar.css">
+
+<link rel="stylesheet" href="./style/default.css">
+<link rel="stylesheet" href="./style/sidebar.css">
+<link rel="stylesheet" media='(orientation: portrait) or (pointer: coarse) or (max-width: 1000px)' href="./style/mobile.css"/>
+<link rel="stylesheet" media='not ((orientation: portrait) or (pointer: coarse) or (max-width: 1000px))' href="./style/desktop.css"/>
+
 <script type="text/javascript" src="scripts.js"></script>
 
 <style>
@@ -21,16 +25,9 @@
     <header>
         <h1> What Do I Need to Start a Dollar Lunch Club? </h1>
 
-        <nav>
-            <ul>
-                <li> <a href="index.html"> home </a> </li>
-                <li> <a href="#" target="_self" rel="noopener"> what you need to start a dollar lunch club </a> 
-                    <ul>
-                        <li> <a href="#supplies" target="_self" rel="noopener"> supplies </a> </li>
-                        <li> <a href="#sourcing" target="_self" rel="noopener"> sourcing </a> </li>
-                    </ul>
-                </li>
-            </ul>
+        <nav class="grid-container">
+            <button class="grid-item"><a href="index.html">home</a></button>
+            <button class="grid-item"><a href="#" target="_self" rel="noopener">how to start a dollar lunch club</a></button>
         </nav>
 
     </header>
