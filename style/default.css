@@ -94,102 +94,10 @@ img {
 }
 
 @media (orientation: landscape) {
-	body {
-	  width: 80vw;
-	}
 
-	.logo {
-		max-width: 10vw;
-		max-height: 10vw;
-		margin: 1vw;
-		height: fit-content;
-	}
-
-	#our-friends.grid-container {
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-template-rows: 1fr 1fr;	
-	}
-
-	#our-values.grid-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}
-
-	#our-values .grid-item {
-		width: 25vw;
-	}
-
-	#kumeyaay-tribe-website-logo {
-		width: 20vw;
-	}
-
-	#our-values.grid-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}
-
-	#other-resources.grid-container {
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: 1fr;	
-	}
   }
 
-  @media (orientation: portrait) or (max-width: 1200px){
-	body {
-	  width: 90vw;
-	  font-size: 2.5vmax;
-	}
-	
-	.grid-item {
-		margin: 1vw;
-		max-width: 25vmax;
-		max-height: 25vmax;		
-	}
-
-	img.logo {
-		padding: 1vw;
-		max-width: 20vmax;
-		max-height: 20vmax;
-		height:inherit;
-		width: inherit;
-		object-fit: contain;
-	}
-
-	#logo-banner .grid-item {
-		max-width: 25vw;
-		word-break: break-all;
-	}
-
-	#kumeyaay-tribe-website-logo {
-		max-width: 40vw;
-	}	
-
-	#our-values.grid-container {
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr;
-	}
-
-	#our-values .grid-item {
-		margin: 1em;
-	}
-
-	.art {
-		max-width: 90vw;
-	}
-	#calendar {
-		max-width: 90vw;
-		max-height: 90vh;
-	}
-
-	#our-friends.grid-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr;	
-	}	
-
-	#other-resources.grid-container {
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;	
-	}
+@media (orientation: portrait) or (max-width: 1200px){
 
   }
 

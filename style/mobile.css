@@ -1,0 +1,63 @@
+body {
+    width: 90vw;
+    font-size: 2.5vmax;
+  }
+  
+  .grid-item {
+      margin: 1vw;
+      max-width: 25vmax;
+      max-height: 25vmax;		
+  }
+
+  img.logo {
+      padding: 1vw;
+      max-width: 20vmin;
+      max-height: 20vmin;
+      height:inherit;
+      width: inherit;
+      object-fit: contain;
+  }
+
+#logo-banner {
+    max-width: fit-content;
+}
+
+  #logo-banner .grid-item {
+      max-width: 60%;
+      word-break: break-all;
+  }
+
+#logo-banner .logo {
+    max-width: 100%;
+  }
+
+  #kumeyaay-tribe-website-logo {
+      max-width: 40vw;
+  }	
+
+  #our-values.grid-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+
+  #our-values .grid-item {
+      margin: 1em;
+  }
+
+  .art {
+      max-width: 90%;
+  }
+  #calendar {
+      max-width: 90%;
+      max-height: 90%;
+  }
+
+  #our-friends.grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;	
+  }	
+
+  #other-resources.grid-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;	
+  }

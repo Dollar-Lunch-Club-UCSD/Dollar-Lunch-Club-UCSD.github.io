@@ -4,8 +4,12 @@
 <head>
 <title>Dollar Lunch Club @ UCSD</title>
 <link rel="icon" type="image/x-icon" href="./favicon.png">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="sidebar.css">
+
+<link rel="stylesheet" href="./style/default.css">
+<link rel="stylesheet" href="./style/sidebar.css">
+<link rel="stylesheet" media='(orientation: portrait) or (pointer: coarse) or (max-width: 1000px)' href="./style/mobile.css"/>
+<link rel="stylesheet" media='not ((orientation: portrait) or (pointer: coarse) or (max-width: 1000px))' href="./style/desktop.css"/>
+
 <script type="text/javascript" src="scripts.js"></script>
 </head>
 
@@ -14,17 +18,9 @@
     <header>
         <h1>Dollar Lunch Club @ UCSD</h1>
         
-        <nav>
-            <ul>
-                <li> <a href="#"> home </a>
-                    <ul>
-                        <li> <a href="#about-us" target="_self" rel="noopener"> about us </a> </li>
-                        <li> <a href="#calendar" target="_self" rel="noopener"> our calendar </a> </li>
-                        <li> <a href="#friends-and-resources" target="_self" rel="noopener"> friends and resources </a> </li>
-                    </ul>
-                </li>
-                <li> <a href="what-you-need-to-start-a-dlc.html" target="_self" rel="noopener"> what you need to start a dollar lunch club </a> </li>
-            </ul>
+        <nav class="grid-container">
+            <button class="grid-item"><a href="#">home</a></button>
+            <button class="grid-item"><a href="what-you-need-to-start-a-dlc.html" target="_self" rel="noopener">how to start a dollar lunch club</a></button>
         </nav>
     </header>
 
@@ -47,10 +43,10 @@
             </p>
 
             <p class="grid-item">
-            <a href="https://account.venmo.com/pay?recipients=UCSD-strike-food" title="donate to @UCSD-strike-food on Venmo in a new tab" target="_blank" rel="noopener">
+            <a href="https://account.venmo.com/pay?recipients=dollar-lunch-club" title="donate to @dollar-lunch-club on Venmo in a new tab" target="_blank" rel="noopener">
                 <img src="./media/venmo-logo.png" alt="the Venmo logo, which is a V in a rounded square" id="" class="logo">
             </a>
-            @UCSD-strike-food
+            @dollar-lunch-club
             </p>
         </div>
         </section>

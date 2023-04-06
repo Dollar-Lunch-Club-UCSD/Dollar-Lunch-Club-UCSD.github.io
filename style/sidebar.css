@@ -1,11 +1,44 @@
 /* from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp */
 
 nav {
+  width: 80%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;  
+}
+
+nav button {
+	background-color: #556B2F;
+	color: #FFFBC8;
+  place-self: center stretch;
+  margin: 0.1em;
+  padding: 1em;
+  border: 0px;
+  text-align: center;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav button:hover {
+	color: #556B2F;
+	background-color: #FFFBC8;
+}
+
+nav button:hover a{
+	color: #556B2F;
+}
+
+
+
+/*
+nav {
 	background-color: #556B2F;
 	color: #FFFBC8;
     margin: 0;
-    padding: 0;
-    width: 200px;
+    padding: 1vw;
+    width: 20vw;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -56,3 +89,4 @@ nav ul, nav ol{
       float: none;
     }
   }
+  */
