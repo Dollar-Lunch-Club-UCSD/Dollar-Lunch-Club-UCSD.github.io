@@ -4,8 +4,8 @@ nav {
 	background-color: #556B2F;
 	color: #FFFBC8;
     margin: 0;
-    padding: 0;
-    width: 200px;
+    padding: 1vw;
+    width: 20vw;
     position: fixed;
     height: 100%;
     overflow: auto;
