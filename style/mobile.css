@@ -1,35 +1,32 @@
 body {
-    width: 90vw;
-    font-size: 2.5vmax;
+    width: 90%;
   }
   
-  .grid-item {
+.grid-item {
       margin: 1vw;
       max-width: 25vmax;
       max-height: 25vmax;		
-  }
+}
 
-  img.logo {
+img.logo {
       padding: 1vw;
       max-width: 20vmin;
       max-height: 20vmin;
       height:inherit;
       width: inherit;
       object-fit: contain;
-  }
+}
 
 #logo-banner {
     max-width: fit-content;
+    max-height: 25vh;
 }
 
-  #logo-banner .grid-item {
-      max-width: 60%;
+#logo-banner .grid-item {
+      /*max-width: 80%;*/
       word-break: break-all;
-  }
-
-#logo-banner .logo {
-    max-width: 100%;
-  }
+      font-weight: normal;
+}
 
   #kumeyaay-tribe-website-logo {
       max-width: 40vw;
