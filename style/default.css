@@ -41,14 +41,6 @@ body {
 	margin: auto;
 }
 
-header {
-    font-size: larger;
-}
-
-main {
-	font-size: medium;
-}
-
 h1, h3, h5 {
 	margin: 1em;
 	color: #DF5555;

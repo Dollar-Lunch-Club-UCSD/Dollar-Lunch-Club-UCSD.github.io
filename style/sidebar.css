@@ -1,7 +1,8 @@
 nav {
-  width: 80%;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr;  
+	grid-template-rows: 1fr; 
+  justify-content: stretch; 
+  align-content: stretch; 
 }
 
 nav button {
@@ -13,7 +14,8 @@ nav button {
   border: 0px;
   text-align: center;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
+  font-size: larger;
 }
 
 nav button:hover {
