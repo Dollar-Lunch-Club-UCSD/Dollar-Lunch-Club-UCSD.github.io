@@ -28,6 +28,11 @@ body {
     width: 20vw;
 }
 
+#border-mutual-aid.grid-container {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
 #our-values.grid-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
