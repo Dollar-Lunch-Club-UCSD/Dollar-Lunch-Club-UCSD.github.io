@@ -20,6 +20,8 @@ img.logo {
 #logo-banner {
     max-width: fit-content;
     max-height: 25vh;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 #logo-banner .grid-item {

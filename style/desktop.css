@@ -10,6 +10,11 @@ body {
     height: fit-content;
 }
 
+#logo-banner.grid-container {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
 #our-friends.grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;	
