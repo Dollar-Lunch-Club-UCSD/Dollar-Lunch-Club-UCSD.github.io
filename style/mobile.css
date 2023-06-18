@@ -58,7 +58,7 @@ img.logo {
 
   #our-friends.grid-container {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;	
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;	
   }	
 
   #other-resources.grid-container {
